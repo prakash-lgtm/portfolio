@@ -18,7 +18,7 @@ A high-performance modern developer portfolio featuring an interactive, full-pag
 ## Local Development
 
 ```bash
-# Start local server
-npm start
+# Start local development server
+npm run dev
 # Open http://localhost:3000 in your browser
 ```

@@ -2,10 +2,8 @@
   "name": "prakash-portfolio",
   "version": "1.0.0",
   "description": "Prakash's Cinematic Portfolio with Transparent Scroll Animation",
-  "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js"
+    "dev": "node dev-server.js"
   },
   "keywords": [
     "portfolio",
