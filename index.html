@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRAKASH — Software Engineer & AI Developer</title>
+  <meta name="description" content="Portfolio of Prakash — Software Engineer & AI Developer. Practical applications, interactive digital experiences, and intelligent technology." />
+  
+  <!-- Modern Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@1,400;1,600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <span class="role-tag">SOFTWARE DEVELOPER</span>
+      <span class="sub-role">DIGITAL CREATOR</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="#projects" class="nav-link">PROJECTS</a>
+      <a href="#skills" class="nav-link">SKILLS</a>
+      <a href="#process" class="nav-link">PROCESS</a>
+      <a href="#contact" class="nav-link">CONTACT</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="status-indicator">
+        <span class="status-pulse"></span>
+        OPEN TO OPPORTUNITIES ✦
+      </span>
+      <span class="badge-tag">DEVELOPER</span>
+    </div>
+
+    <!-- Mobile Hamburger Toggle Button -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-header">
+        <div class="mobile-nav-brand">
+          <span class="m-brand-name">PRAKASH</span>
+          <span class="m-brand-sub">SOFTWARE &amp; AI</span>
+        </div>
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Navigation Menu">✕</button>
+      </div>
+
+      <nav class="mobile-nav-menu">
+        <a href="#projects" class="mobile-nav-link">
+          <span class="m-link-num">01</span>
+          <span class="m-link-text">PROJECTS</span>
+          <span class="m-link-arrow">→</span>
+        </a>
+        <a href="#skills" class="mobile-nav-link">
+          <span class="m-link-num">02</span>
+          <span class="m-link-text">SKILLS &amp; EDUCATION</span>
+          <span class="m-link-arrow">→</span>
+        </a>
+        <a href="#process" class="mobile-nav-link">
+          <span class="m-link-num">03</span>
+          <span class="m-link-text">WORK PROCESS</span>
+          <span class="m-link-arrow">→</span>
+        </a>
+        <a href="#contact" class="mobile-nav-link">
+          <span class="m-link-num">04</span>
+          <span class="m-link-text">CONTACT</span>
+          <span class="m-link-arrow">→</span>
+        </a>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <div class="mobile-status-pill">
+          <span class="status-pulse"></span>
+          <span>OPEN TO OPPORTUNITIES ✦</span>
+        </div>
+        <div class="mobile-social-row">
+          <a href="https://github.com/prakash-lgtm" target="_blank" rel="noopener" class="m-social-btn">GITHUB</a>
+          <a href="https://linkedin.com/in/prakash-p-2417aa337" target="_blank" rel="noopener" class="m-social-btn">LINKEDIN</a>
+          <a href="https://www.instagram.com/_prakash04_?vrfl=bmFhY3Q0aHM3YzE0" target="_blank" rel="noopener" class="m-social-btn">INSTAGRAM</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Full-Website Background Stage: Transparent Video Player & Cinematic Stage -->
+  <div class="global-background-stage" id="global-stage" aria-hidden="true">
+    <!-- Giant Background Editorial Text -->
+    <div class="giant-portfolio-bg">
+      <span>PORTFOLIO</span>
+    </div>
+
+    <!-- Centerpiece Portrait Animation Canvas -->
+    <div class="centerpiece-canvas-container" id="canvas-wrapper">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <!-- Hero Content Section (Layered directly above transparent animated background) -->
+  <section class="hero-section" id="hero">
+    
+    <!-- Hero Overlay Content Grid -->
+    <div class="hero-content-grid">
+      
+      <!-- Left Hero Identity Info -->
+      <div class="hero-left-col">
+        <span class="script-greeting">Hello, I'm</span>
+        <h1 class="hero-name">PRAKASH</h1>
+        <div class="hero-role-badge">
+          <span>SOFTWARE ENGINEER &amp;</span>
+          <span class="accent-text">AI DEVELOPER</span>
+        </div>
+        <p class="hero-bio">
+          I build practical applications and interactive digital experiences, combining software development, creativity, and intelligent technology to turn ideas into reality.
+        </p>
+        <div class="hero-badges">
+          <span class="pill-badge">✦ BASED IN INDIA</span>
+          <span class="pill-badge highlight">✦ OPEN TO COLLABORATION</span>
+        </div>
+      </div>
+
+      <!-- Right Hero Floating Stats & Quote -->
+      <div class="hero-right-col">
+        <div class="floating-quote-box">
+          <span class="star-icon">✦</span>
+          <p>Turning ideas into practical, intelligent digital experiences.</p>
+        </div>
+
+        <div class="hero-stats-group">
+          <div class="stat-card">
+            <span class="stat-number">3<span class="stat-plus">+</span></span>
+            <span class="stat-label">YEARS EXPERIENCE</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">15<span class="stat-plus">+</span></span>
+            <span class="stat-label">PROJECTS COMPLETED</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100<span class="stat-plus">%</span></span>
+            <span class="stat-label">CODE PASSION</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Interactive Scroll Indicator -->
+    <div class="hero-scrub-indicator">
+      <div class="scroll-mouse-icon">
+        <div class="scroll-wheel-dot"></div>
+      </div>
+      <span class="scrub-label">SCROLL TO ANIMATE</span>
+      <span class="frame-counter" id="frame-counter">FRAME 001 / 240</span>
+    </div>
+
+  </section>
+
+  <!-- Main Portfolio Content Body -->
+  <main class="portfolio-main">
+
+    <!-- Selected Projects Section -->
+    <section class="section-container" id="projects">
+      <div class="section-header-row">
+        <div class="section-title-wrap">
+          <span class="section-num-tag">// 01</span>
+          <h2 class="section-title">SELECTED PROJECTS</h2>
+        </div>
+        <a href="#contact" class="view-all-link">
+          <span>VIEW ALL PROJECTS</span>
+          <span class="arrow-glyph">→</span>
+        </a>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 01: CAMPUS404 -->
+        <article class="project-card">
+          <div class="project-preview-wrap">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+              <span class="browser-url-text">campus404.dev</span>
+            </div>
+            <img src="./assets/campus404.jpg" alt="Campus404 Platform" class="project-img" loading="lazy" />
+            <div class="project-overlay-glow"></div>
+            <span class="project-badge">FEATURED</span>
+          </div>
+          <div class="project-meta-row">
+            <div class="project-info">
+              <div class="project-index">01</div>
+              <div>
+                <h3 class="project-name">CAMPUS404</h3>
+                <p class="project-category">GAMIFIED CODING LEARNING PLATFORM</p>
+              </div>
+            </div>
+            <a href="https://github.com/prakash-lgtm" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Campus404 Project">
+              <span>EXPLORE</span>
+              <span class="arrow-glyph">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 02: QUANTOM AI -->
+        <article class="project-card">
+          <div class="project-preview-wrap fallback-preview quantom-ai-bg">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+              <span class="browser-url-text">quantom.ai/explorer</span>
+            </div>
+            <div class="project-code-art">
+              <div class="ai-node-cluster">
+                <div class="neural-node node-1"></div>
+                <div class="neural-node node-2"></div>
+                <div class="neural-node node-3"></div>
+                <div class="neural-beam"></div>
+              </div>
+              <div class="mockup-code-lines">
+                <code>&gt; init_model(QuantomNeuralEngine)</code>
+                <code>&gt; accuracy: 99.4% [OPTIMIZED]</code>
+                <code>&gt; state: real-time inference</code>
+              </div>
+            </div>
+            <div class="project-overlay-glow"></div>
+            <span class="project-badge">AI / ML</span>
+          </div>
+          <div class="project-meta-row">
+            <div class="project-info">
+              <div class="project-index">02</div>
+              <div>
+                <h3 class="project-name">QUANTOM AI</h3>
+                <p class="project-category">AI-POWERED SOFTWARE EXPLORATION</p>
+              </div>
+            </div>
+            <a href="https://github.com/prakash-lgtm" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Quantom AI">
+              <span>EXPLORE</span>
+              <span class="arrow-glyph">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 03: CUSTOMER CHURN PREDICTION -->
+        <article class="project-card">
+          <div class="project-preview-wrap fallback-preview churn-bg">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+              <span class="browser-url-text">analytics.churn-prediction.ml</span>
+            </div>
+            <div class="project-code-art">
+              <div class="churn-chart-preview">
+                <div class="chart-bar h-60"></div>
+                <div class="chart-bar h-85 highlight"></div>
+                <div class="chart-bar h-40"></div>
+                <div class="chart-bar h-95 highlight"></div>
+                <div class="chart-bar h-70"></div>
+              </div>
+              <div class="mockup-stat-tag">ROC-AUC: 0.942 | RETENTION +28%</div>
+            </div>
+            <div class="project-overlay-glow"></div>
+            <span class="project-badge">DATA SCIENCE</span>
+          </div>
+          <div class="project-meta-row">
+            <div class="project-info">
+              <div class="project-index">03</div>
+              <div>
+                <h3 class="project-name">CUSTOMER CHURN PREDICTION</h3>
+                <p class="project-category">MACHINE LEARNING APPLICATION</p>
+              </div>
+            </div>
+            <a href="https://github.com/prakash-lgtm" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Churn Prediction">
+              <span>EXPLORE</span>
+              <span class="arrow-glyph">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 04: AURA PLAYER -->
+        <article class="project-card">
+          <div class="project-preview-wrap fallback-preview aura-bg">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+              <span class="browser-url-text">auraplayer.app</span>
+            </div>
+            <div class="project-code-art">
+              <div class="audio-waveform-visualizer">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="player-controls-mock">
+                <span>⏮</span> <span class="play-btn">▶</span> <span>⏭</span>
+              </div>
+            </div>
+            <div class="project-overlay-glow"></div>
+            <span class="project-badge">MULTIMEDIA</span>
+          </div>
+          <div class="project-meta-row">
+            <div class="project-info">
+              <div class="project-index">04</div>
+              <div>
+                <h3 class="project-name">AURA PLAYER</h3>
+                <p class="project-category">AUDIO &amp; VIDEO PLAYER APPLICATION</p>
+              </div>
+            </div>
+            <a href="https://github.com/prakash-lgtm" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Aura Player">
+              <span>EXPLORE</span>
+              <span class="arrow-glyph">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 05: AI WEATHER APPLICATION -->
+        <article class="project-card">
+          <div class="project-preview-wrap fallback-preview weather-bg">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+              <span class="browser-url-text">aiweather.live</span>
+            </div>
+            <div class="project-code-art">
+              <div class="weather-visual-orbit">
+                <span class="weather-temp-glow">28°C</span>
+                <span class="weather-condition">RADAR ANALYTICS ✦ PRECIPITATION</span>
+              </div>
+            </div>
+            <div class="project-overlay-glow"></div>
+            <span class="project-badge">INTELLIGENCE</span>
+          </div>
+          <div class="project-meta-row">
+            <div class="project-info">
+              <div class="project-index">05</div>
+              <div>
+                <h3 class="project-name">AI WEATHER APPLICATION</h3>
+                <p class="project-category">WEATHER INFORMATION PLATFORM</p>
+              </div>
+            </div>
+            <a href="https://github.com/prakash-lgtm" target="_blank" rel="noopener" class="project-link-btn" aria-label="View AI Weather">
+              <span>EXPLORE</span>
+              <span class="arrow-glyph">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 06: FRAUD DETECTION SYSTEM -->
+        <article class="project-card">
+          <div class="project-preview-wrap fallback-preview fraud-bg">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+              <span class="browser-url-text">security.fraud-guard.sys</span>
+            </div>
+            <div class="project-code-art">
+              <div class="shield-indicator">
+                <span class="shield-icon">🛡</span>
+                <span class="shield-status">ANOMALY DETECTED: 0.002%</span>
+              </div>
+              <div class="mockup-code-lines">
+                <code>&gt; Realtime payment validation... [SECURE]</code>
+              </div>
+            </div>
+            <div class="project-overlay-glow"></div>
+            <span class="project-badge">CYBER SECURITY</span>
+          </div>
+          <div class="project-meta-row">
+            <div class="project-info">
+              <div class="project-index">06</div>
+              <div>
+                <h3 class="project-name">FRAUD DETECTION SYSTEM</h3>
+                <p class="project-category">MACHINE LEARNING PROJECT</p>
+              </div>
+            </div>
+            <a href="https://github.com/prakash-lgtm" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Fraud Detection">
+              <span>EXPLORE</span>
+              <span class="arrow-glyph">→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3-Column Editorial Grid: Education & Skills, Work Process, Philosophy -->
+    <section class="editorial-three-col" id="skills">
+      
+      <!-- Column 1: Education & Skills -->
+      <div class="col-card education-skills-card">
+        <h3 class="editorial-col-title">EDUCATION &amp; SKILLS</h3>
+
+        <div class="sub-block">
+          <span class="sub-label">EDUCATION</span>
+          <div class="education-item">
+            <h4 class="edu-degree">B.E. COMPUTER SCIENCE &amp; ENGINEERING</h4>
+            <p class="edu-college">KVG COLLEGE OF ENGINEERING, SULLIA</p>
+            <span class="edu-period">2022 — 2026</span>
+          </div>
+        </div>
+
+        <div class="sub-block">
+          <span class="sub-label">SKILLS &amp; TECHNOLOGIES</span>
+          <div class="skills-chips-wrapper">
+            <span class="skill-pill">JAVA</span>
+            <span class="skill-pill">PYTHON</span>
+            <span class="skill-pill">HTML / CSS</span>
+            <span class="skill-pill">JAVASCRIPT</span>
+            <span class="skill-pill">FLASK</span>
+            <span class="skill-pill highlight">MACHINE LEARNING</span>
+            <span class="skill-pill">TENSORFLOW</span>
+            <span class="skill-pill">SCIKIT-LEARN</span>
+            <span class="skill-pill">PANDAS / NUMPY</span>
+            <span class="skill-pill">GIT / GITHUB</span>
+            <span class="skill-pill">OBJECT-ORIENTED PROGRAMMING</span>
+            <span class="skill-pill">DATA STRUCTURES &amp; ALGORITHMS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Work Process -->
+      <div class="col-card process-card" id="process">
+        <h3 class="editorial-col-title">MY WORK PROCESS</h3>
+        
+        <div class="process-timeline">
+          <div class="timeline-line"></div>
+
+          <!-- Step 01 -->
+          <div class="process-step">
+            <div class="step-bullet">
+              <span>01</span>
+            </div>
+            <div class="step-info">
+              <h4 class="step-title">DISCOVER</h4>
+              <p class="step-desc">Understand the problem, goals, and requirements.</p>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-step">
+            <div class="step-bullet">
+              <span>02</span>
+            </div>
+            <div class="step-info">
+              <h4 class="step-title">PLAN</h4>
+              <p class="step-desc">Choose the right tools, technologies, and approach.</p>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-step">
+            <div class="step-bullet">
+              <span>03</span>
+            </div>
+            <div class="step-info">
+              <h4 class="step-title">DEVELOP</h4>
+              <p class="step-desc">Transform ideas into functional applications.</p>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="process-step">
+            <div class="step-bullet">
+              <span>04</span>
+            </div>
+            <div class="step-info">
+              <h4 class="step-title">TEST</h4>
+              <p class="step-desc">Debug, validate, and improve the implementation.</p>
+            </div>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="process-step">
+            <div class="step-bullet">
+              <span>05</span>
+            </div>
+            <div class="step-info">
+              <h4 class="step-title">REFINE</h4>
+              <p class="step-desc">Optimize performance, usability, and code quality.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Column 3: Philosophy (Iconic Crimson Feature Card) -->
+      <div class="col-card philosophy-card">
+        <div class="crimson-quote-badge">“</div>
+        <span class="philosophy-label">MY PHILOSOPHY</span>
+        <blockquote class="philosophy-quote">
+          "Great software is more than code. It's about solving real problems, creating meaningful experiences, and continuously improving."
+        </blockquote>
+
+        <div class="philosophy-signature-box">
+          <span class="philosophy-callout">LET'S CREATE SOMETHING GREAT TOGETHER.</span>
+          <span class="philosophy-sign">✦ Prakash</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Contact & Let's Build Something Meaningful Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-grid">
+        
+        <div class="contact-left">
+          <div class="contact-status-tag">✦ OPEN TO COLLABORATION</div>
+          <h2 class="contact-headline">
+            LET'S BUILD<br />
+            SOMETHING<br />
+            <span class="crimson-accent">MEANINGFUL.</span>
+          </h2>
+          <p class="contact-bio">
+            I'm interested in software development, AI projects, open-source contributions, and collaborating with developers who enjoy building useful things.
+          </p>
+
+          <div class="social-channels-list">
+            
+            <!-- Email -->
+            <div class="contact-item" id="email-item">
+              <div class="item-icon">✉</div>
+              <div class="item-text">
+                <span class="item-label">EMAIL</span>
+                <a href="mailto:prakash@kvgce.ac.in" class="item-val">prakash@kvgce.ac.in</a>
+              </div>
+              <button class="copy-email-btn" id="copy-btn" title="Copy Email">
+                <span>COPY</span>
+              </button>
+            </div>
+
+            <!-- GitHub -->
+            <a href="https://github.com/prakash-lgtm" target="_blank" rel="noopener" class="contact-item">
+              <div class="item-icon">⎇</div>
+              <div class="item-text">
+                <span class="item-label">GITHUB</span>
+                <span class="item-val">github.com/prakash-lgtm</span>
+              </div>
+              <span class="item-arrow">↗</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/prakash-p-2417aa337" target="_blank" rel="noopener" class="contact-item">
+              <div class="item-icon">in</div>
+              <div class="item-text">
+                <span class="item-label">LINKEDIN</span>
+                <span class="item-val">linkedin.com/in/prakash-p-2417aa337</span>
+              </div>
+              <span class="item-arrow">↗</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/_prakash04_?vrfl=bmFhY3Q0aHM3YzE0" target="_blank" rel="noopener" class="contact-item">
+              <div class="item-icon">✦</div>
+              <div class="item-text">
+                <span class="item-label">INSTAGRAM</span>
+                <span class="item-val">instagram.com/_prakash04_</span>
+              </div>
+              <span class="item-arrow">↗</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <!-- Interactive Terminal Card -->
+          <div class="terminal-mockup">
+            <div class="terminal-bar">
+              <div class="term-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="term-title">prakash@workstation: ~/portfolio</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt-user">prakash$</span> <span class="cmd-text">curl -s https://api.prakash.dev/status</span></p>
+              <pre class="terminal-json">{
+  "status": "Available for Hire",
+  "focus": ["Software Engineering", "AI", "Full-Stack"],
+  "location": "India ✦",
+  "email": "prakash@kvgce.ac.in",
+  "ready_to_build": true
+}</pre>
+              <p class="term-cursor-line"><span class="prompt-user">prakash$</span> <span class="term-cursor"></span></p>
+            </div>
+            <div class="terminal-footer">
+              <a href="mailto:prakash@kvgce.ac.in" class="term-action-btn">
+                <span>SEND MESSAGE DIRECTLY</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Editorial Footer -->
+  <footer class="editorial-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">PRAKASH</span>
+        <span class="footer-copy">© 2026. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="footer-center">
+        <span class="footer-motto">DESIGNED WITH PURPOSE. BUILT THROUGH CODE.</span>
+      </div>
+      <div class="footer-right">
+        <button class="back-to-top-btn" id="back-to-top" aria-label="Back to Top">
+          <span>TOP</span>
+          <span>↑</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast-popup" id="toast">Email copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
